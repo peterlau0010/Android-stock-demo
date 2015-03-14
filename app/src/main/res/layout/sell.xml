@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#488AC7" >
+    
+    <TextView 
+        android:text="Sell Stock"
+        android:textSize="30dp"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:textStyle="bold" 
+    	android:background="#0049FF"
+    	android:textColor="#2A185A"  />
+    
+    
+    <TableLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:stretchColumns="1,2">
+    	 <View android:layout_height="10dp" android:background="#6B00FF" />
+    	 
+    	<TableRow >
+    	<TextView 
+    	    android:text="Stock Code: "
+    	    android:textSize="20dp"/>
+        <EditText 
+            android:id="@+id/etScode"
+            android:textSize="20dp"
+            android:gravity="right"/>
+        </TableRow>
+        
+        <TableRow >
+        <TextView 
+    	    android:text="Quantity: "
+    	    android:textSize="20dp"/>
+        <EditText 
+            android:id="@+id/etQTY"
+            android:textSize="20dp"
+            android:gravity="right"/>
+        </TableRow>
+         
+        <TableRow >
+        <TextView 
+    	    android:text="Price: "
+    	    android:textSize="20dp"/>
+        <EditText 
+            android:id="@+id/etPrice"
+            android:textSize="20dp"
+            android:gravity="right"/>
+        </TableRow>
+        
+        <TableRow >
+            <TextView 
+    	    android:id="@+id/tvError"
+    	    android:textSize="20dp"
+    	    android:layout_span="2"/>
+        </TableRow>
+        
+        <TableRow >
+            <Button
+                android:id="@+id/btnSell"
+                android:text="Sell"
+                android:layout_span="2"
+                />
+        </TableRow>
+        <TableRow >
+        	 <TextView 
+    	    android:id="@+id/tvSuccess"
+    	    android:textSize="20dp"
+    	    android:layout_span="2"/>
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>

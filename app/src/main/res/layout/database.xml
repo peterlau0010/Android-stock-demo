@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#488AC7" >
+    
+    <TextView 
+        android:text="Portfolio"
+        android:textSize="30dp"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:textStyle="bold" 
+    	android:textColor="#2A185A"    	
+        ></TextView>
+       <HorizontalScrollView
+		 android:layout_width="wrap_content"
+   			android:layout_height="wrap_content">
+    <TableLayout android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:stretchColumns="2"
+    	
+    	android:orientation="vertical">
+
+    <TableRow>
+      <TextView android:text="ID"
+          android:gravity="center"
+   		/>  
+    <TextView android:text="Stock Code "
+        android:gravity="center"
+   		/>
+    <TextView android:text="Stock Name "
+        android:gravity="center"
+   		/>
+    <TextView android:text="Lot"
+        android:gravity="center"
+   		/>
+    <TextView android:text="Holding "
+        android:gravity="center"
+   		/>
+    </TableRow>
+     
+    <TableRow>
+        <TextView android:id="@+id/tvID"
+            android:gravity="center"
+         />
+        <TextView android:id="@+id/tvSCode"
+            android:gravity="center"
+        />
+        <TextView android:id="@+id/tvSName"
+            android:gravity="center"
+            />
+        <TextView android:id="@+id/tvLot"
+            android:gravity="center"
+            />
+        <TextView android:id="@+id/tvQTY"
+            android:gravity="center"
+          />
+     </TableRow>
+   
+</TableLayout>
+  </HorizontalScrollView>
+</LinearLayout>

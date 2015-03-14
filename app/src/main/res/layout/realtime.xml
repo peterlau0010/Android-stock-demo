@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#488AC7" >
+    
+    
+    <TextView android:id="@+id/tvQuote"
+		     android:layout_width="match_parent"
+		    android:layout_height="wrap_content"   
+		    android:background="#0049FF"
+		    android:text="HK Quote"   
+    		android:textSize="30dp"
+    		android:textColor="#2A185A"
+    		android:gravity="center"
+    		android:textStyle ="bold"
+   /> 
+    
+	<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"    
+    android:background="#488AC7"
+     >
+    
+	    <EditText
+	        android:id="@+id/etSearch"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/btnSearch" />
+
+	    <Button
+	        android:id="@+id/btnSearch"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:text="Search" />
+	       
+    </RelativeLayout>
+    
+     <TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0"
+    >
+    <View android:layout_height="5dip" android:background="#6B00FF" />  
+    
+    
+   <TableRow>
+       <TextView android:text="Stock Code: " android:textSize="20dp"/>
+       <TextView android:id="@+id/tvStockNameCode" android:layout_gravity="right" android:textSize="20dp" />
+   </TableRow>
+   
+   <TableRow>
+       <TextView android:text="Stock Name: " android:textSize="20dp"/>
+       <TextView android:id="@+id/tvStockName" android:layout_gravity="right" android:textSize="20dp"/>
+   </TableRow>
+   
+   <View android:layout_height="5dip" android:background="#6B00FF" android:textSize="20dp"/>  
+   
+   <TableRow>
+       <TextView android:id="@+id/tvDATE" android:text="Date:" android:textSize="20dp"/> 
+       <TextView android:id="@+id/tvDate" android:layout_gravity="right" android:textSize="20dp"></TextView>
+   </TableRow>
+
+	<TableRow>
+	    <TextView android:id="@+id/tvOPEN" android:text="Open:" android:textSize="20dp"/> 
+		<TextView android:id="@+id/tvOpen" android:layout_gravity="right" android:textSize="20dp"/>
+	</TableRow>
+
+	<TableRow>
+	    <TextView android:id="@+id/tvPRICE" android:text="Price:" android:textSize="20dp"/> 
+		<TextView android:id="@+id/tvPrice" android:layout_gravity="right" android:textSize="20dp"/>
+	</TableRow>
+	
+	<TableRow>
+    	<TextView android:id="@+id/tvHIGH" android:text="High:" android:textSize="20dp"/> 
+		<TextView android:id="@+id/tvHigh" android:layout_gravity="right" android:textSize="20dp"/>
+	</TableRow>
+
+	<TableRow>
+	    <TextView android:id="@+id/tvLOW" android:text="Low:" android:textSize="20dp"/> 
+		<TextView android:id="@+id/tvLow" android:layout_gravity="right" android:textSize="20dp"/>
+	</TableRow>
+	
+	<TableRow>
+	    <TextView android:id="@+id/tvYEAR_HIGH" android:text="52-W Hi:" android:textSize="20dp"/>
+	    <TextView android:id="@+id/tvYear_high" android:layout_gravity="right" android:textSize="20dp"/>  
+	</TableRow>
+
+	<TableRow>
+	    <TextView android:id="@+id/tvYEAR_LOW" android:text="52-W Lo:" android:textSize="20dp"/>
+		<TextView android:id="@+id/tvYear_low" android:layout_gravity="right" android:textSize="20dp"/>
+	</TableRow>
+
+	<TableRow>
+    	<TextView android:id="@+id/tvLOT" android:text="Lot:" android:textSize="20dp"/>
+		<TextView android:id="@+id/tvLot" android:layout_gravity="right" android:textSize="20dp"/>
+    </TableRow>
+    
+	<TableRow>
+   		<TextView android:id="@+id/tvVOL" android:text="Vol:" android:textSize="20dp"/>
+   		<TextView android:id="@+id/tvVol" android:layout_gravity="right" android:textSize="20dp"/>
+    </TableRow>
+    
+</TableLayout>
+
+</LinearLayout>

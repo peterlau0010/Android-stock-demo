@@ -1,0 +1,51 @@
+
+
+<LinearLayout
+android:id="@+id/container"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#488AC7"
+android:gravity="bottom"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" >
+<TextView android:text="STOCK"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"	
+	android:layout_gravity ="top"
+	android:gravity ="center"
+	android:layout_weight="1"
+	android:textSize="50dp"
+	android:textStyle="bold"
+	android:textColor="#4A2C9D"
+		    ></TextView>
+    <TableLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" 
+    	android:stretchColumns="1">
+    	
+	<TableRow>    	
+		<TextView android:id="@+id/tvUser"		    
+		    android:text="User Name:"
+		    ></TextView>
+		<EditText android:id="@+id/etUser"
+		    ></EditText>
+	</TableRow>
+	
+	<TableRow>  
+	<TextView android:id="@+id/tvPassword"    
+	    android:text="Password:"
+	    ></TextView>	
+	<EditText android:id="@+id/etPassword"    
+	    android:inputType="textVisiblePassword"
+	    ></EditText>
+	</TableRow>
+	
+	<Button android:id="@+id/btnLogin"	    
+	    android:text="Login"	 
+	    android:layout_column="1"
+	    android:onClick="onClick"></Button>"
+  
+	</TableLayout>
+
+</LinearLayout>
